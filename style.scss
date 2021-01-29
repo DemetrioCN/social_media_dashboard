@@ -3,7 +3,7 @@ $main-color: hsl(230, 17%, 14%);
 $article-color: hsl(228, 28%, 20%);
 $text-color: hsl(228, 34%, 66%);
 $just-white: white;
-$green-number: hsl(146, 68%, 55%);
+$green-number: #1db489;
 $red-number: #dc414c;
 
 /* FONT STYLE */
@@ -71,12 +71,16 @@ body {
     width: 100%;
     height: auto;
     @extend .center;
+    flex-wrap: wrap;
 }
+
+/* Estructura general del diseño de las cajas */
 .box__content--article {
-    width: 85%;
+    width: 272px;
     height: auto;
     background-color: $article-color;
     border-top: 5px solid hsl(210, 78%, 56%);
+    margin-bottom: 30px;
     border-radius: 5px;
     @extend .center;
     flex-direction:column;
@@ -120,14 +124,30 @@ body {
     margin-bottom: 20px;
 }
 .box__article--bottom figure {
-    margin-top: 2px;
     @extend .center;
 }
 .box__article--bottom figure img{
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
 }
 .box__article--bottom  p {
     font-size: 1.2rem;
     font-weight: bold;
+}
+#top-color-2 {
+    border-top: 5px solid #1ca0f2;
+}
+#top-color-3 {
+    border-top: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px; 
+    border-image-source: linear-gradient(to right, #fdc468, #df4996);
+}
+#top-color-4 {
+    border-top: 5px solid #c4032a;
+    
+}
+#today-red {
+    color: #c4032a;
 }

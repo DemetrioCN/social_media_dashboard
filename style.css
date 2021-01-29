@@ -73,13 +73,16 @@ header {
 .box__content {
   width: 100%;
   height: auto;
+  flex-wrap: wrap;
 }
 
+/* Estructura general del diseño de las cajas */
 .box__content--article {
-  width: 85%;
+  width: 272px;
   height: auto;
   background-color: #252a41;
   border-top: 5px solid #378fe6;
+  margin-bottom: 30px;
   border-radius: 5px;
   flex-direction: column;
 }
@@ -122,22 +125,38 @@ header {
 
 .box__article--bottom {
   flex-direction: row;
-  color: #3eda82;
+  color: #1db489;
   margin-bottom: 20px;
 }
 
-.box__article--bottom figure {
-  margin-top: 2px;
-}
-
 .box__article--bottom figure img {
-  width: 15px;
-  height: 15px;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
 }
 
 .box__article--bottom p {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+#top-color-2 {
+  border-top: 5px solid #1ca0f2;
+}
+
+#top-color-3 {
+  border-top: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, #fdc468, #df4996);
+}
+
+#top-color-4 {
+  border-top: 5px solid #c4032a;
+}
+
+#today-red {
+  color: #c4032a;
 }
 
 /*# sourceMappingURL=style.css.map */
