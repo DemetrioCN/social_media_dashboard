@@ -1,0 +1,133 @@
+/* COLOR VARIABLES */
+$main-color: hsl(230, 17%, 14%);
+$article-color: hsl(228, 28%, 20%);
+$text-color: hsl(228, 34%, 66%);
+$just-white: white;
+$green-number: hsl(146, 68%, 55%);
+$red-number: #dc414c;
+
+/* FONT STYLE */
+$letter-style: "Inter", sans-serif;
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: $letter-style;
+}
+body {
+    background-color: $main-color;
+}
+ header {
+    margin: 20px;
+} 
+.header__social {
+    width: 80%;
+    height: 100px;
+    margin-top: 40px;
+}
+.header__social h1 {
+    width: 200px;
+    font-size: 2.69rem;
+    font-weight: 700;
+    color: $just-white;
+    margin-bottom: 5px;
+}
+.header__social p {
+    width: 200px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $text-color;
+}
+.hr__line {
+    border-top: 1px solid $text-color;
+}
+.header__button {
+    width: 100%;
+    height: 80px;
+    @extend .center;
+}
+.header__button p {
+    width: 50%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $text-color;
+}
+.header__button button {
+    width: 50%;
+    height: 30px;
+}
+/* Diseño de las cajas */
+.box__content {
+    width: 100%;
+    height: auto;
+    @extend .center;
+}
+.box__content--article {
+    width: 85%;
+    height: auto;
+    background-color: $article-color;
+    border-top: 5px solid hsl(210, 78%, 56%);
+    border-radius: 5px;
+    @extend .center;
+    flex-direction:column;
+}
+.box__article--top {
+    @extend .center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: $text-color;
+}
+.box__article--top figure {
+    margin-right: 5px;
+}
+.box__article--top figure img{
+    width: 25px;
+    height: 25px;
+} 
+.box__article--medium {
+    @extend .center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.box__article--medium .date {
+    font-size: 6.0rem;
+    font-weight: 700;
+    color: $just-white;
+}
+.box__article--medium .followers {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: $text-color;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.box__article--bottom {
+    @extend .center;
+    flex-direction: row;
+    color: $green-number;
+    margin-bottom: 20px;
+}
+.box__article--bottom figure {
+    margin-top: 2px;
+    @extend .center;
+}
+.box__article--bottom figure img{
+    width: 15px;
+    height: 15px;
+}
+.box__article--bottom  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
