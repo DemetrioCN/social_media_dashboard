@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* COLOR VARIABLES */
 /* FONT STYLE */
-.center, .box__article--bottom figure, .box__article--bottom, .box__article--medium, .box__article--top, .box__content--article, .box__content, .header__button {
+.center, .over-articles, .overview, .box__article--bottom figure, .box__article--bottom, .box__article--medium, .box__article--top, .box__content--article, .box__content, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +157,95 @@ header {
 
 #today-red {
   color: #c4032a;
+}
+
+/* Diseño de los overview today */
+.overview {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+.overview__title {
+  margin: 30px 10px;
+  padding-left: 15px;
+  color: white;
+  align-self: flex-start;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8b97c6;
+}
+
+.over-articles {
+  width: 262px;
+  height: 140px;
+  margin: 10px 10px;
+  background-color: #252a41;
+  flex-direction: column;
+  border-radius: 5%;
+}
+
+.over__article--topcontent {
+  width: 272px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  left: 25px;
+}
+
+.over__article--topcontent p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #8b97c6;
+}
+
+.over__article--topcontent figure img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -50px;
+}
+
+.over__article--downcontent {
+  width: 272px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.over__article--downcontent .number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  left: -25px;
+}
+
+.porcent {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1db489;
+}
+
+#porcent-red {
+  color: #dc414c;
+}
+
+.over__article--downcontent div {
+  width: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  right: -20px;
+}
+
+.over__article--downcontent div figure img {
+  width: 8px;
+  height: 5px;
+  margin-right: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
