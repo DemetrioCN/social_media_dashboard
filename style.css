@@ -246,4 +246,12 @@ header {
   margin-right: 3px;
 }
 
+/* Make responsive website with media queries*/
+@media screen and (min-width: 992px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
