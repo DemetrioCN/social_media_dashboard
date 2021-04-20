@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* COLOR VARIABLES */
 /* FONT STYLE */
-.center, .over-articles, .overview, .box__article--bottom figure, .box__article--bottom, .box__article--medium, .box__article--top, .box__content--article, .box__content, .header__button {
+.center, .over-articles, .overview, .box__article--bottom figure, .box__article--bottom, .box__article--medium, .box__article--top, .box__content--article, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,14 +72,19 @@ header {
 /* Diseño de las cajas */
 .box__content {
   width: 100%;
-  height: auto;
-  flex-wrap: wrap;
+  /* height: auto; */
+  /* @extend .center;
+  flex-wrap: wrap; */
+  /* grid-gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  place-items: center center;
+  gap: 20px;
 }
 
 /* Estructura general del diseño de las cajas */
 .box__content--article {
   width: 272px;
-  height: auto;
   background-color: #252a41;
   border-top: 5px solid #378fe6;
   margin-bottom: 30px;
@@ -142,13 +147,6 @@ header {
 
 #top-color-2 {
   border-top: 5px solid #1ca0f2;
-}
-
-#top-color-3 {
-  border-top: 5px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(to right, #fdc468, #df4996);
 }
 
 #top-color-4 {
@@ -224,13 +222,13 @@ header {
   left: -25px;
 }
 
-.porcent {
+.percent {
   font-size: 1.4rem;
   font-weight: bold;
   color: #1db489;
 }
 
-#porcent-red {
+#percent-red {
   color: #dc414c;
 }
 

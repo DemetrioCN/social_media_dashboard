@@ -69,15 +69,19 @@ body {
 /* Diseño de las cajas */
 .box__content {
     width: 100%;
-    height: auto;
-    @extend .center;
-    flex-wrap: wrap;
+    /* height: auto; */
+    /* @extend .center;
+    flex-wrap: wrap; */
+    /* grid-gap: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    place-items: center center;
+    gap: 20px;
 }
 
 /* Estructura general del diseño de las cajas */
 .box__content--article {
     width: 272px;
-    height: auto;
     background-color: $article-color;
     border-top: 5px solid hsl(210, 78%, 56%);
     margin-bottom: 30px;
@@ -138,11 +142,8 @@ body {
 #top-color-2 {
     border-top: 5px solid #1ca0f2;
 }
-#top-color-3 {
-    border-top: 5px solid;
-    border-image-slice: 1;
-    border-width: 5px; 
-    border-image-source: linear-gradient(to right, #fdc468, #df4996);
+#top-color-3{
+    
 }
 #top-color-4 {
     border-top: 5px solid #c4032a;
@@ -211,12 +212,12 @@ body {
     position: relative;
     left: -25px; 
 }
-.porcent {
+.percent {
     font-size: 1.4rem;
     font-weight: bold;
     color: $green-number;
 }
-#porcent-red {
+#percent-red {
     color: $red-number;
 }
 .over__article--downcontent div{
